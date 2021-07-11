@@ -1,0 +1,25 @@
+<body>
+  
+<div class="header">
+  <h1>To do List</h1>
+
+  
+  <input class="inputToDo"  placeholder="Add a new Task" type="text" [(ngModel)] = "task">
+  <button class="addButton" (click)="addTask()">{{primaryButton}}</button>  
+
+  <ul>
+    <li *ngFor="let item of items">
+      <div class="checkAndTask">
+        <input id="inputCheck" type="checkbox">
+        {{item}}
+      </div>
+      <div class="positionButton">
+        <button mat-fab class="editButton" (click)="editTask(item)"><mat-icon>create</mat-icon></button>
+        <button mat-fab class="removeButton" (click)="removeTask(item)"><mat-icon>delete</mat-icon></button>  
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+</body>
