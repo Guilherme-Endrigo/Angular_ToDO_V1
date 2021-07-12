@@ -1,161 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Zen+Tokyo+Zoo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
 
-body {
-  background-image: linear-gradient(120deg, #5f57d1, #c065c0);
-}
-
-.header {
-  padding: 25px;
-  text-align: center;
-  border-radius: 50px;
-  background-image: linear-gradient(120deg, #5f57d1, #c065c0);
-}
-
 h1 {
   font-size: 80px;
   color: #283966;
-  margin: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 10vh;
   font-family: "Zen Tokyo Zoo", cursive;
-}
-
-.inputToDo {
-  width: 75vw;
-  height: 4vh;
-  font-size: 25px;
-  border-radius: 10px;
-  margin-right: 10px;
   text-align: center;
 }
 
-/*list*/
-
-span {
-  margin-right: 20px;
-  display: flex;
+.example-full-width {
+  width: 50vw;
+  background-color: transparent;
 }
 
-ul {
-  list-style-type: none;
-  margin-top: 100px;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-li {
-  background-color: rgb(143, 188, 173);
-  font-size: 2em;
-  padding: 10px;
-  border-radius: 7px;
-  margin: 15px;
-  box-shadow: 0 0 1em gold;
-}
-
-.checkAndTask {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-#inputCheck {
-  width: 25px;
-  height: 25px;
-  margin: 12px;
-}
-
-/*buttons*/
-
-.positionButton {
-  display: flex;
-  justify-content: flex-end;
+.main {
+  width: 60vw;
+  margin: 5vh;
+  padding: 5vw;
+  background-color: rgb(223, 212, 192);
+  border-radius: 50px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 4px 22px 0px rgba(0, 0, 0, 0.41);
 }
 
 .addButton {
-  box-shadow: 0px 0px 15px 2px #9fb4f2;
-  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-  background-color: #7892c2;
-  border-radius: 15px;
-  border: 1px solid #4e6096;
+  box-shadow: 3px 4px 0px 0px #899599;
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  background-color: #ededed;
+  border-radius: 3px;
+  border: 1px solid #d6bcd6;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: #3a8a9e;
   font-family: Arial;
   font-size: 15px;
-  padding: 5px 15px;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #283966;
+  text-shadow: 0px 1px 0px #e1e2ed;
 }
+
 .addButton:hover {
-  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-  background-color: #476e9e;
+  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba;
 }
 .addButton:active {
   position: relative;
   top: 1px;
 }
-.material-icons {
-  line-height: 0;
+
+/*list*/
+ul {
+  list-style: none;
+  padding: 2px;
+  width: 58vw;
 }
 
-.mat-icon {
-  height: 15px;
+ul li {
+  background: #fff;
+  margin: 5px;
+  padding: 10px;
+  border-left: 5px solid gold;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
 }
 
-.removeButton {
-  box-shadow: 0px 0px 15px 2px #f29f9f;
-  background: linear-gradient(to bottom, #c27878 5%, #9e4747 100%);
-  background-color: #c27878;
-  border: 1px solid #964e4e;
-  display: inline-block;
+#edit,
+#remove {
+  padding-right: 7px;
+  padding-right: 7px;
+  float: right;
   cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  padding: 5px 15px;
-  margin: 10px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #283966;
-}
-.removeButton:hover {
-  background: linear-gradient(to bottom, #9e4747 5%, #c27878 100%);
-  background-color: #9e4747;
-}
-.removeButton:active {
-  position: relative;
-  top: 1px;
 }
 
-.editButton {
-  box-shadow: 0px 0px 15px 2px #9ff29f;
-  background: linear-gradient(to bottom, #7bc278 5%, #479e53 100%);
-  background-color: #78c278;
-  border: 1px solid #4e9658;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  padding: 5px 15px;
-  margin: 10px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #283966;
+#edit {
+  color: green;
 }
-.editButton:hover {
-  background: linear-gradient(to bottom, #479e4e 5%, #78c284 100%);
-  background-color: #479e4b;
+
+#edit:hover {
+  color: rgb(4, 177, 4);
 }
-.editButton:active {
-  position: relative;
-  top: 1px;
+
+#remove {
+  color: red;
+}
+
+#remove:hover {
+  color: rgb(255, 81, 0);
 }
 
 @media (max-width: 750px) {
-  .inputToDo {
-    width: 50vw;
-  }
 }
-
 @media (max-width: 415px) {
   h1 {
     font-size: 40px;
